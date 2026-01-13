@@ -1,21 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Todo from "./components/Todo.jsx"
+import TodoTitle from "./components/TodoTitle.jsx"
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h2>Hello World!!</h2>
-      <h1>HEZRON LIMO FRONTEND</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa odit
-        facere blanditiis distinctio libero molestias, obcaecati necessitatibus
-        ipsum officiis. Iste laborum a reprehenderit quidem facere voluptatibus
-        molestias! Obcaecati, ipsum asperiores.
-      </p>
+    <> 
+      <TodoTitle />
+      <Todo task="Learn React"/>
+      <Todo task="Finish ASAP Frontend"/>
+      <Todo  task="Land a Junior Job" />
+      <Todo  task="Earn $100k+ " />
     </>
   );
 }
